@@ -1,0 +1,125 @@
+% !TEX program = xelatex
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[dvipsnames]{xcolor} % for my ForestGreen
+\usepackage{titlesec} % for formating my sections
+\usepackage{fontspec} % for using OpenType fonts on windows
+\usepackage[inline]{enumitem} % For custom description lists
+
+\usepackage{hyperref} % for embedding links
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{progressbar}
+
+\usepackage{graphicx}
+\pagecolor{White}
+\pagestyle{empty}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=ForestGreen,
+}
+\newfontfamily\headingfont[]{Fontin Sans}
+\newfontface{\coolfont}{Monaspace Neon}
+\setmainfont{Fontin Sans}
+
+\titleformat*{\section}{\LARGE\headingfont\color{ForestGreen}\raggedright}
+\titlespacing*{\section}{0pt}{*1}{*0.01}
+
+
+\begin{document}
+    \begin{raggedright}
+    \section*{\bfseries{Jack Nolan}}
+    {\color{ForestGreen}\rule{40mm}{0.5mm}}
+        \begin{raggedright} \small
+            \vspace{6pt} \\
+            \faMailBulk\ \hspace{3pt}\ \href{www.mailto:thenolanteam@gmail.com}{gmail} \\
+            \faLinkedin\ \hspace{3pt}\ \href{www.linkedin.com/in/jacknolan47}{linkedin} \\
+            \faGithub\ \hspace{3pt}\ \href{https://www.github.com/Luckless47}{github} \\
+            \faPhone\ \hspace{3pt}\ \href{tel:+12185139129}{(218)513-9129} \\
+        \end{raggedright}
+    \end{raggedright}
+    \vspace{12pt}
+    
+
+    \vspace{15pt}
+    \hbox to \textwidth{
+        {\faCode\hspace{5pt}\bfseries\Large\color{ForestGreen}{Programming}} \hfill
+        {\faGraduationCap\hspace{5pt}\bfseries\Large\color{ForestGreen}{Education}} \hfill
+        {\faBuffer\hspace{5pt}\bfseries\Large\color{ForestGreen}{Coursework}} \hfill
+    }
+    {\noindent\color{ForestGreen} \rule{\linewidth}{0.5mm}\vspace{10pt}}
+    \hbox to \textwidth{
+        \vtop{\hsize=0.3\textwidth
+            {\noindent\color{blue}C\#}\hspace{35pt}\progressbar{0.9}\\
+            {\color{teal}\faPython\ Python\ \progressbar{0.7}}\\
+            {\color{red}\faHtml5 HTML\hspace{7pt} \progressbar{0.2}}\\
+            {LaTeX\hspace{21pt} \progressbar{0.9}}\\
+            {\color{orange}\faDatabase\ SQL\hspace{17pt} \progressbar{0.3}}\\
+        }
+        \hfill
+        \vtop{\hsize=0.33\textwidth
+        \noindent\textbf{{Computer Science} $\cdot$ BA}
+        \\
+       {\itshape{University of MN Twin-Cities\\\textbf{2021-2025}}}
+        \vspace{10pt} \\
+        \textbf{Associates in Arts $\cdot$ AA}\\
+        \itshape{Central Lakes Community College\\\textbf{2018-2020}}
+        }
+        \hfill
+        \vtop{\hsize=0.3\textwidth
+        % \noindent{4th in Bluestar Gamejam\\ for \href{https://itch.io/jam/wag-jam-2/results}{\textit{Headcollector}}}
+        {\noindent\bfseries\color{ForestGreen}CSCI 4061}
+        \\ Intro to Operating Systems
+        \vspace*{1pt}
+        \\ {\bfseries\color{ForestGreen}CSCI 4211} 
+        \\ Intro to Computer Networks
+        \vspace*{1pt}
+        \\ {\bfseries\color{ForestGreen}CSCI 4511W} 
+        \\ Intro: Artificial Intelligence
+        \vspace*{1pt}
+        \\ {\bfseries\color{ForestGreen}CSCI 3081W}
+        \\ Program Design \& Development
+        \\ {\bfseries\color{ForestGreen}CSCI 4041}
+        \\ Algs \& Data Str.
+        }
+        \hfill
+    }
+    \section*{{\color{black}\faBug} \ \bfseries{About Me}}
+        {\color{ForestGreen} \rule{\linewidth}{0.5mm}}
+        \begin{flushleft}
+            Hello, my name is Jack (or John). I'm a CSCI UMN-Twin-Cities Alumni who enjoys 3d modeling, drawing 2d textures, and hand/vibe coding video games. 
+            I love music, listening to it, writing it, recording it, and performing on any instrument I have next to me. 
+            I'm very hands-on and project-oriented; I recently built and endtable out of cedar for my room. I like working with others, whether thats on a new album, a new video game, or just fishing. I am a recovering marijuana addict
+        \end{flushleft}
+    \section*{{\color{black}\faBriefcase} \ \bfseries{Work History}}
+        {\color{ForestGreen} \rule{\linewidth}{0.5mm}}
+        \small\begin{description}
+            \item[\large\textbf{Grandview Lodge}]  September 2019 --- Febuary 2020 (Server Assistant @ Cru) May 2024 - August 2024 (Host @ Cru)
+                \begin{description}
+                \item Checked the online scheduling service to collect a reservation count
+                \item Used the reservation count to setup a seating arragnment
+                \end{description}
+            \item[\large\textbf{Target}] May 2022 --- September 2022 (Tech Service Desk)
+                \begin{description}
+                \item Kept digital inventory of the backstock, floor, and freight 
+                \item Got comfortable answering calls concerning tech issues and replacing sim cards on phones
+                \end{description}
+            \item[\large\textbf{Caribou Coffee}] May 2023 --- Febuary 2024 (Barista)
+                \begin{description}
+                \item Multi-tasking and working multiple positions at once.
+                \item Handling high-stress situations and using assertive communication when needed. 
+                \end{description}
+            % \item[\large\textbf{Lakes Latte}] Febuary 2025 --- April 2025 (Barista)
+            %     \begin{description}
+            %         \item Good listening skills when given verbal and hands-on instructions. 
+            %     \end{description}
+            \item[\large\textbf{Starbucks}] June 2026 --- August 2026 (Barista)
+                \begin{description}
+                \item Great listening skills; Exceptional at working with others to solve differences.
+                \end{description}
+            \end{description}
+\end{document}
+
+%% Resources
+    % information on importing logos as ttf font files.
+    % https://tex.stackexchange.com/questions/257438/adding-a-custom-symbol-logo-as-a-font-character-to-xetex-latex
